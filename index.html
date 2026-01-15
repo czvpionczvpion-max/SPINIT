@@ -1,0 +1,2243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOWY ROK Z CIOSEM - NAJLEPSZE BONUSY POWITALNE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./favicon.png">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="NOWY ROK Z CIOSEM - WYGRAJ 10.000zŁ!">
+    <meta property="og:description" content="Zarejestruj się z kodem CIOS, zrób depozyt i wygraj 1.000zł! Co 2 dni losujemy zwycięzcę.">
+    <meta property="og:image" content="./favicon.png">
+    <meta property="og:type" content="website">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+        
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('bg.png'); 
+            background-size: 400% 100%;
+            animation: gradient-bg 20s ease infinite;
+            z-index: -2;
+        }
+        
+        @keyframes gradient-bg {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .content-overlay {
+            position: relative;
+            z-index: 1;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            padding: 1rem 2rem;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(128, 255, 0, 0.1);
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(to bottom right, #80ff00, black);
+            padding: 2px;
+        }
+        
+        .logo-inner {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+        }
+        
+        .leaderboard-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .prize-amount {
+            font-family: 'Tilt Neon', sans-serif;
+            font-weight: 900;
+            font-size: 3.2rem;
+            background: linear-gradient(to right, #ffffff, #b4b4b4, #ffffff);
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+            margin-bottom: 1rem;
+            animation: text-glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes text-glow {
+            0% { text-shadow: 0 0 10px rgb(255, 255, 255); }
+            100% { text-shadow: 0 0 20px rgba(255, 255, 255, 0.212), 0 0 30px rgba(255, 255, 255, 0.486); }
+        }
+        
+        .leaderboard-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .description {
+            font-size: 1rem;
+            color: #d1d5db;
+            max-width: 600px;
+            margin: 1rem auto 1rem;
+        }
+        
+        .code-highlight {
+            background: rgba(128, 255, 0, 0.15);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #80ff00;
+            border: 1px solid rgba(128, 255, 0, 0.3);
+        }
+        
+        .partners {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .stake-logo {
+            height: 4rem;
+        }
+        
+        .tyceno-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 3rem;
+            background: linear-gradient(to right, #80ff00, #b3ff66);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 600px;
+            margin: 3rem auto;
+        }
+        
+        .divider-line {
+            flex: 1;
+            height: 2px;
+            background: linear-gradient(to right, transparent, rgba(128, 255, 0, 0.2), rgba(128, 255, 0, 0.5));
+        }
+
+        .divider-line-reverse {
+            flex: 1;
+            height: 2px;
+            background: linear-gradient(to left, transparent, rgba(128, 255, 0, 0.2), rgba(128, 255, 0, 0.5));
+        }
+        
+        .divider-center {
+            padding: 0 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .divider-dot {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: #80ff00;
+            opacity: 0.7;
+        }
+        
+        .divider-dot-main {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #80ff00;
+            box-shadow: 0 0 10px rgba(128, 255, 0, 0.8);
+            animation: pulse-dot 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.2); opacity: 1; }
+        }
+        
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(to right, #80ff00, #66cc00);
+            color: black;
+            border: none;
+            box-shadow: 0 4px 15px rgba(128, 255, 0, 0.3);
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(to right, #99ff33, #80ff00);
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(128, 255, 0, 0.5);
+        }
+        
+        .btn-secondary {
+            background: rgba(38, 38, 38, 0.8);
+            color: white;
+            border: 1px solid rgba(128, 255, 0, 0.3);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(128, 255, 0, 0.1);
+            border-color: rgba(128, 255, 0, 0.7);
+        }
+        
+        .rules-card {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: rgba(23, 23, 23, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            border: 1px solid rgba(128, 255, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .rules-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem;
+            border-bottom: 1px solid rgba(128, 255, 0, 0.1);
+        }
+        
+        .rules-title {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .rules-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(38, 38, 38, 0.5);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(128, 255, 0, 0.3);
+        }
+        
+        .rules-content {
+            padding: 1.5rem;
+        }
+        
+        .warning-box {
+            background: rgba(128, 255, 0, 0.08);
+            border-left: 3px solid #80ff00;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            gap: 0.75rem;
+        }
+        
+        .warning-icon {
+            color: #80ff00;
+            flex-shrink: 0;
+        }
+        
+        .rtp-rules {
+            background: rgba(38, 38, 38, 0.4);
+            border: 1px solid rgba(128, 255, 0, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .rtp-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        
+        .rtp-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+        }
+        
+        .rtp-item {
+            background: rgba(23, 23, 23, 0.5);
+            border: 1px solid rgba(128, 255, 0, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+        
+        .rtp-type {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .rtp-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+        
+        .rtp-description {
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
+        
+        .help-box {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem;
+            background: rgba(38, 38, 38, 0.3);
+            border: 1px solid rgba(128, 255, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        /* Sekcja rekomendacji */
+        .recommendations-section {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            position: relative;
+            z-index: 10;
+            margin-bottom: -0.5rem;
+            margin-top: -2.5rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            padding-top: 1rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+                padding-top: 2rem;
+            }
+        }
+
+        .section-subtitle {
+            font-size: 0.875rem;
+            text-align: center;
+            color: #d1d5db;
+            margin-bottom: 1.5rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        @media (min-width: 768px) {
+            .section-subtitle {
+                font-size: 1.25rem;
+                margin-bottom: 3rem;
+            }
+        }
+
+        .magical-text {
+            background: linear-gradient(to right, #80ff00, #b3ff66, #80ff00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 900;
+            position: relative;
+            text-shadow: 0 0 10px rgba(128, 255, 0, 0.7);
+            animation: text-shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes text-shimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .casino-card-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .casino-card {
+            background: transparent;
+            border-radius: 15px;
+            position: relative;
+            min-height: 550px;
+            width: 450px;
+            max-width: 95%;
+            overflow: hidden;
+            box-shadow: 
+                0 0 20px rgba(128, 255, 0, 0.4),
+                0 0 40px rgba(128, 255, 0, 0.2),
+                0 0 60px rgba(128, 255, 0, 0.1),
+                inset 0 0 20px rgba(179, 255, 102, 0.1);
+            border: 2px solid rgba(128, 255, 0, 0.4);
+            transform: rotate(-1deg);
+            transition: transform 0.3s ease;
+        }
+
+        .casino-card:hover {
+            transform: rotate(-1deg) scale(1.02);
+            box-shadow: 
+                0 0 25px rgba(128, 255, 0, 0.6),
+                0 0 50px rgba(128, 255, 0, 0.3),
+                0 0 75px rgba(128, 255, 0, 0.15);
+        }
+
+        .casino-card-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .casino-card-bg img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            object-fit: cover;
+            color: transparent;
+        }
+
+        .casino-card-bg-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(12, 12, 12, 0.85);
+        }
+
+        .casino-card-content {
+            position: relative;
+            z-index: 10;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+        }
+
+        .casino-logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .casino-logo {
+                margin-bottom: 1rem;
+            }
+        }
+
+        .casino-logo img {
+            object-fit: contain;
+            width: 60%;
+            color: transparent;
+        }
+
+        @media (min-width: 768px) {
+            .casino-logo img {
+                width: 55%;
+            }
+        }
+
+        .bonus-badge {
+            background: linear-gradient(to right, #80ff00, #b3ff66, #80ff00);
+            border-radius: 9999px;
+            text-align: center;
+            padding: 0.25rem 0.75rem;
+            width: fit-content;
+            margin: 0 auto 0.75rem;
+            box-shadow: 0 0 10px rgba(128, 255, 0, 0.5);
+        }
+
+        @media (min-width: 768px) {
+            .bonus-badge {
+                margin-bottom: 1.5rem;
+                padding: 0.25rem 1rem;
+            }
+        }
+
+        .bonus-badge span {
+            font-weight: 800;
+            color: #000;
+            font-family: 'Montserrat', sans-serif;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        }
+
+        .casino-card h4 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 0.25rem;
+            margin-top: 1.5rem;
+            color: #ffffff;
+        }
+
+        @media (min-width: 768px) {
+            .casino-card h4 {
+                font-size: 1.875rem;
+                margin-bottom: 0.5rem;
+                margin-top: 0;
+            }
+        }
+
+        .casino-card p {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #cccccc;
+        }
+
+        @media (min-width: 768px) {
+            .casino-card p {
+                margin-bottom: 2rem;
+            }
+        }
+
+        .pros-section {
+            margin-bottom: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 4rem;
+        }
+
+        @media (min-width: 768px) {
+            .pros-section {
+                margin-bottom: 2rem;
+                margin-top: 2rem;
+            }
+        }
+
+        .pros-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        @media (min-width: 768px) {
+            .pros-title {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .pros-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .pros-list {
+                gap: 0.75rem;
+            }
+        }
+
+        .pros-list li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pros-list svg {
+            margin-right: 0.5rem;
+            color: #80ff00;
+            flex-shrink: 0;
+            filter: drop-shadow(0 0 5px rgba(128, 255, 0, 0.7));
+        }
+
+        .pros-list span {
+            color: white;
+            text-align: center;
+            font-size: 0.875rem;
+        }
+
+        @media (min-width: 768px) {
+            .pros-list span {
+                font-size: 1rem;
+            }
+        }
+
+        .bonus-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: auto;
+            padding-top: 3rem;
+        }
+
+        @media (min-width: 768px) {
+            .bonus-button-container {
+                padding-top: 0;
+            }
+        }
+
+        .bonus-button {
+            background: linear-gradient(to right, #80ff00, #b3ff66, #80ff00);
+            border-radius: 8px;
+            padding: 0.75rem 2rem;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.3s;
+            margin-bottom: 4rem;
+            box-shadow: 0 4px 15px rgba(128, 255, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        @media (min-width: 768px) {
+            .bonus-button {
+                padding: 1rem 2.5rem;
+            }
+        }
+
+        .bonus-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(128, 255, 0, 0.7);
+        }
+
+        .bonus-button span {
+            font-weight: 800;
+            color: #000;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.25rem;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+        }
+        
+        /* Nowy footer */
+        .footer-disclaimer {
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(128, 255, 0, 0.3);
+            padding: 1.5rem 2rem;
+            text-align: center;
+            box-shadow: 0 -5px 20px rgba(128, 255, 0, 0.1);
+        }
+        
+        .footer-text {
+            font-size: 0.85rem;
+            color: #d1d5db;
+            line-height: 1.5;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .footer-text strong {
+            color: #80ff00;
+            font-weight: 600;
+        }
+        
+        /* Selfie gradient section */
+        .selfie-gradient {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, 
+                #80ff00 0%, 
+                #b3ff66 25%, 
+                #80ff00 50%, 
+                #66cc00 75%, 
+                #4d9900 100%);
+            margin: 2rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 0 50px rgba(128, 255, 0, 0.4);
+            animation: gradient-rotate 10s linear infinite;
+        }
+
+        .selfie-gradient::before {
+            content: '';
+            position: absolute;
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1;
+        }
+
+        .selfie-gradient-text {
+            position: relative;
+            z-index: 2;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 2rem;
+            background: linear-gradient(45deg, 
+                #ffffff 0%, 
+                #ffffff 25%, 
+                #8a8a8a 50%, 
+                #ffffff 75%, 
+                #8b8b8b 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        @keyframes gradient-rotate {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Prize info section */
+        .prize-info {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 1.5rem;
+            max-width: 800px;
+            margin: 2rem auto;
+            border-left: 4px solid #80ff00;
+            box-shadow: 0 4px 20px rgba(128, 255, 0, 0.3);
+        }
+
+        .prize-info h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+
+        .prize-info h3 .highlight {
+            color: #80ff00;
+        }
+
+        .prize-details {
+            background: rgba(128, 255, 0, 0);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .prize-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            border: 1px solid rgba(128, 255, 0, 0.2);
+        }
+
+        .stat-value {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: #80ff00;
+            margin-bottom: 0.25rem;
+            text-shadow: 0 0 10px rgba(128, 255, 0, 0.5);
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            font-weight: 900;
+            color: #ffffff;
+        }
+
+        .requirements-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .requirements-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(128, 255, 0, 0.1);
+            display: flex;
+            align-items: center;    
+        }
+
+        .requirements-list li:last-child {
+            border-bottom: none;
+        }
+
+        .requirement-icon {
+            color: #80ff00;
+            margin-right: 1rem;
+            font-weight: bold;
+        }
+
+        .requirement-text {
+            font-size: 0.95rem;
+            color: #fff;
+        }
+
+        .requirement-note {
+            font-size: 0.85rem;
+            color: #9ca3af;
+            margin-top: 0.25rem;
+        }
+
+        .account-note {
+            background: rgba(128, 255, 0, 0.1);
+            border: 1px solid rgba(128, 255, 0, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+
+        .account-note strong {
+            color: #80ff00;
+        }
+        
+        @media (max-width: 768px) {
+            .prize-amount {
+                font-size: 4rem;
+            }
+            
+            .leaderboard-title {
+                font-size: 2rem;
+            }
+            
+            .partners {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .rtp-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-disclaimer {
+                padding: 1rem;
+            }
+            
+            .footer-text {
+                font-size: 0.8rem;
+            }
+
+            .casino-card {
+                transform: rotate(0deg);
+            }
+
+            .casino-card:hover {
+                transform: scale(1.02);
+            }
+
+            .selfie-gradient {
+                width: 200px;
+                height: 200px;
+            }
+
+            .selfie-gradient::before {
+                width: 190px;
+                height: 190px;
+            }
+
+            .selfie-gradient-text {
+                font-size: 1.5rem;
+            }
+
+            .prize-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .prize-info h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .profile-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 1px solid #80ff00;
+            box-shadow: 0 0 20px rgba(128, 255, 0, 0.6);
+            overflow: hidden;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            position: relative;
+        }
+
+        .profile-circle::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            background: linear-gradient(45deg, #4d9900, #80ff00, #b3ff66);
+            background-size: 200% 200%;
+            animation: neon-glow 3s ease-in-out infinite;
+            z-index: -1;
+        }
+
+        @keyframes neon-glow {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 1; }
+        }
+
+        .profile-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .prize-amount {
+                font-size: 2.5rem !important;
+                line-height: 1.2;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .leaderboard-title,
+        .prize-amount,
+        .tyceno-text,
+        .section-title,
+        .section-subtitle,
+        .btn,
+        .bonus-badge span,
+        .bonus-button span,
+        .footer-text,
+        .pros-title,
+        .casino-card h4,
+        .casino-card p,
+        .pros-list span {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Dodatkowe style dla różnych wag Montserrat */
+        .leaderboard-title {
+            font-weight: 700;
+        }
+
+        .prize-amount {
+            font-weight: 900;
+        }
+
+        .tyceno-text {
+            font-weight: 900;
+        }
+
+        .section-title {
+            font-weight: 700;
+        }
+
+        .btn {
+            font-weight: 700;
+        }
+
+        .bonus-badge span {
+            font-weight: 800;
+        }
+
+        .bonus-button span {
+            font-weight: 800;
+        }
+
+        .footer-text {
+            font-weight: 400;
+        }
+
+        .pros-title {
+            font-weight: 700;
+        }
+
+        .casino-card h4 {
+            font-weight: 700;
+        }
+
+        .casino-card p {
+            font-weight: 400;
+        }
+
+        .pros-list span {
+            font-weight: 500;
+        }
+
+        /* Sekcja instrukcji */
+        .instructions-section {
+            position: relative;
+            padding: 4rem 1rem;
+            margin-bottom: 0;
+        }
+
+        .instructions-background {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background: linear-gradient(135deg, #0a0a0a 0%, #111111 25%, #0a0a0a 50%, #111111 75%, #0a0a0a 100%);
+            background-size: 400% 400%;
+            animation: gradient-bg 20s ease infinite;
+        }
+
+        .instructions-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .instructions-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        .instructions-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+        }
+
+        .instructions-gradient {
+            background: linear-gradient(to right, #b3ff66, #80ff00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 900;
+            position: relative;
+            animation: text-shimmer 3s ease-in-out infinite;
+        }
+
+        .instructions-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .instructions-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .instruction-card {
+            position: relative;
+            background: rgba(19, 19, 19, 0.9);
+            border-radius: 30px;
+            overflow: hidden;
+            height: 100%;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2.5rem 1rem;
+            border: 2px solid rgba(128, 255, 0, 0.3);
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(128, 255, 0, 0.2);
+        }
+
+        .instruction-card.active {
+            background: rgba(19, 19, 19, 0.95);
+            cursor: pointer;
+        }
+
+        .instruction-card.active:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(128, 255, 0, 0.3);
+            border-color: rgba(128, 255, 0, 0.7);
+        }
+
+        .instruction-card.disabled {
+            opacity: 0.6;
+        }
+
+        .info-icon {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: #80ff00;
+            border-radius: 50%;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(128, 255, 0, 0.7);
+        }
+
+        .info-icon svg {
+            color: #000000;
+        }
+
+        .instruction-content {
+            text-align: center;
+            z-index: 10;
+        }
+
+        .instruction-title {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .instruction-card.disabled .instruction-title {
+            opacity: 0.5;
+        }
+
+        .instruction-link {
+            text-decoration: none;
+            display: block;
+            height: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .instructions-title {
+                font-size: 2rem;
+            }
+            
+            .instruction-card {
+                min-height: 150px;
+                padding: 2rem 1rem;
+            }
+            
+            .instruction-title {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Wersja z super białym kolorem i lepszym kontrastem */
+        .candy-cane-text {
+            color: #80ff00;
+            background: linear-gradient(
+                45deg,
+                #80ff00 25%,
+                #fffff0 25%,
+                #fffff0 50%,
+                #80ff00 50%,
+                #80ff00 75%,
+                #fffff0 75%,
+                #fffff0
+            );
+            background-size: 20px 20px;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            font-weight: 900;
+            position: relative;
+            filter: contrast(1.2) brightness(1.1);
+            text-shadow: 
+                0 0 8px rgba(255, 255, 240, 0.3),
+                0 0 16px rgba(128, 255, 0, 0.3);
+        }
+
+        /* Candy cane border dla casino-card */
+        .casino-card.candy-cane-border {
+            position: relative;
+            border: 3px solid transparent;
+            border-radius: 15px;
+            background: 
+                linear-gradient(rgba(12, 12, 12, 0.9), rgba(12, 12, 12, 0.9)) padding-box,
+                repeating-linear-gradient(
+                    45deg,
+                    #80ff00 0%,
+                    #80ff00 12.5%,
+                    #ffffff 12.5%,
+                    #ffffff 25%,
+                    #80ff00 25%,
+                    #80ff00 37.5%,
+                    #ffffff 37.5%,
+                    #ffffff 50%,
+                    #80ff00 50%,
+                    #80ff00 62.5%,
+                    #ffffff 62.5%,
+                    #ffffff 75%,
+                    #80ff00 75%,
+                    #80ff00 87.5%,
+                    #ffffff 87.5%,
+                    #ffffff 100%
+                ) border-box;
+            background-size: 40px 40px;
+            animation: candy-cane-rotate 20s linear infinite;
+            box-shadow: 
+                0 0 20px rgba(128, 255, 0, 0.4),
+                0 0 40px rgba(128, 255, 0, 0.2),
+                inset 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        /* Alternatywna wersja z grubszymi paskami */
+        .casino-card.candy-cane-border-thick {
+            border: 4px solid transparent;
+            background: 
+                linear-gradient(rgba(12, 12, 12, 0.9), rgba(12, 12, 12, 0.9)) padding-box,
+                repeating-linear-gradient(
+                    45deg,
+                    #80ff00 0%,
+                    #80ff00 20px,
+                    #ffffff 20px,
+                    #ffffff 40px
+                ) border-box;
+            box-shadow: 
+                0 0 25px rgba(255, 255, 255, 0.28),
+                0 0 50px rgba(128, 255, 0, 0.12),
+                inset 0 0 15px rgba(255, 255, 255, 0.15);
+        }
+
+        /* Wersja z efektem świecenia */
+        .casino-card.candy-cane-border-glow {
+            border: 3px solid transparent;
+            background: 
+                linear-gradient(rgba(12, 12, 12, 0.95), rgba(12, 12, 12, 0.95)) padding-box,
+                repeating-linear-gradient(
+                    45deg,
+                    #80ff00 0%,
+                    #80ff00 15px,
+                    #ffffcc 15px,
+                    #ffffcc 30px
+                ) border-box;
+            box-shadow: 
+                0 0 30px rgba(128, 255, 0, 0.6),
+                0 0 60px rgba(128, 255, 0, 0.4),
+                0 0 90px rgba(255, 255, 255, 0.1),
+                inset 0 0 25px rgba(255, 255, 255, 0.2);
+            animation: candy-cane-glow 3s ease-in-out infinite alternate;
+        }
+
+        /* Wersja minimalistyczna */
+        .casino-card.candy-cane-border-simple {
+            border: 2px solid transparent;
+            background: 
+                linear-gradient(rgba(12, 12, 12, 0.9), rgba(12, 12, 12, 0.9)) padding-box,
+                repeating-linear-gradient(
+                    45deg,
+                    #80ff00,
+                    #80ff00 10px,
+                    #ffffff 10px,
+                    #ffffff 20px
+                ) border-box;
+        }
+
+        /* Animacja obracania wzoru */
+        @keyframes candy-cane-rotate {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 40px 40px;
+            }
+        }
+
+        /* Animacja świecenia */
+        @keyframes candy-cane-glow {
+            0% {
+                box-shadow: 
+                    0 0 20px rgba(128, 255, 0, 0.4),
+                    0 0 40px rgba(128, 255, 0, 0.2),
+                    inset 0 0 15px rgba(255, 255, 255, 0.1);
+            }
+            100% {
+                box-shadow: 
+                    0 0 30px rgba(128, 255, 0, 0.7),
+                    0 0 60px rgba(128, 255, 0, 0.5),
+                    0 0 90px rgba(255, 255, 255, 0.2),
+                    inset 0 0 25px rgba(255, 255, 255, 0.3);
+            }
+        }
+
+        /* Wersja z czerwonymi i białymi kulami w rogach */
+        .casino-card.candy-cane-border-dots {
+            position: relative;
+            border: 2px solid #80ff00;
+            border-radius: 15px;
+            overflow: visible;
+        }
+
+        .casino-card.candy-cane-border-dots::before,
+        .casino-card.candy-cane-border-dots::after {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #80ff00;
+            z-index: 2;
+        }
+
+        .casino-card.candy-cane-border-dots::before {
+            top: -6px;
+            left: -6px;
+            box-shadow: 
+                0 0 0 2px #ffffff,
+                0 0 0 4px #80ff00,
+                0 0 10px rgba(128, 255, 0, 0.5);
+        }
+
+        .casino-card.candy-cane-border-dots::after {
+            bottom: -6px;
+            right: -6px;
+            box-shadow: 
+                0 0 0 2px #ffffff,
+                0 0 0 4px #80ff00,
+                0 0 10px rgba(128, 255, 0, 0.5);
+        }
+
+        .casino-card.candy-cane-border-dots .corner-dot {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ffffff;
+            z-index: 2;
+            box-shadow: 
+                0 0 0 2px #80ff00,
+                0 0 0 4px #ffffff,
+                0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .casino-card.candy-cane-border-dots .corner-dot.top-right {
+            top: -6px;
+            right: -6px;
+        }
+
+        .casino-card.candy-cane-border-dots .corner-dot.bottom-left {
+            bottom: -6px;
+            left: -6px;
+        }
+
+        /* --- NOWE STYLE DLA ZDJĘCIA TYPU "SANTA FADE" --- */
+        .santa-fade-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 100%;
+            margin-bottom: -3rem;
+            margin-top: 1rem;
+            position: relative;
+            z-index: 0;
+        }
+
+        .santa-fade-image {
+            width: 100%;
+            max-width: 215px;
+            height: auto;
+            display: block;
+            filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.5));
+            margin-bottom: 10px;
+        }
+
+        /* Modyfikacja istniejącej klasy tytułu, aby na pewno był NAD zdjęciem */
+        .prize-amount {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Wersja mobilna */
+        @media (max-width: 768px) {
+            .santa-fade-container {
+                margin-bottom: -3rem;
+                margin-top: 0.5rem;
+            }
+            
+            .santa-fade-image {
+                max-width: 380px;
+            }
+        }
+
+        .emphasis-headline-red {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.8rem;
+            background: linear-gradient(to right, #80ff00, #b3ff66, #80ff00);
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(128, 255, 0, 0.7);
+            margin-bottom: 1rem; 
+            animation: text-shimmer 3s ease-in-out infinite;
+        }
+
+        .emphasis-headline-yellow {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.8rem;
+            background: linear-gradient(to right, #80ff00, #b3ff66, #80ff00);
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(128, 255, 0, 0.7);
+            margin-bottom: 1rem; 
+            animation: text-shimmer 3s ease-in-out infinite reverse;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-top-logo {
+                opacity: 1;
+            }
+            .mobile-top-logo img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .mobile-top-logo {
+                opacity: 0;
+            }
+        }
+
+        .mobile-top-logo.hidden {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+
+        .mobile-top-logo {
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1000;
+            width: 160px;
+            height: auto;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 8px;
+            padding: 0.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(128, 255, 0, 0.3);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .neonText {
+            color: #eee;
+            text-shadow:
+                0 0 7px #eee,
+                0 0 21px #80ff00,
+                0 0 42px #80ff00;
+        }
+
+        /* NOWA, ULEPSZONA TABELA INFORMACYJNA - NEO-MODERN DESIGN */
+        .info-table-neon {
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem auto;
+            background: rgba(8, 20, 5, 0.95);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            padding: 3px;
+            box-shadow: 
+                0 0 30px rgba(128, 255, 0, 0.4),
+                0 0 60px rgba(128, 255, 0, 0.2),
+                0 0 90px rgba(128, 255, 0, 0.1),
+                inset 0 0 30px rgba(179, 255, 102, 0.15);
+            border: 1px solid rgba(128, 255, 0, 0.6);
+            animation: table-glow 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes table-glow {
+            0% {
+                box-shadow: 
+                    0 0 25px rgba(128, 255, 0, 0.3),
+                    0 0 50px rgba(128, 255, 0, 0.2),
+                    0 0 75px rgba(128, 255, 0, 0.1),
+                    inset 0 0 25px rgba(179, 255, 102, 0.1);
+            }
+            100% {
+                box-shadow: 
+                    0 0 35px rgba(128, 255, 0, 0.5),
+                    0 0 70px rgba(128, 255, 0, 0.3),
+                    0 0 105px rgba(128, 255, 0, 0.2),
+                    inset 0 0 35px rgba(179, 255, 102, 0.2);
+            }
+        }
+
+        .info-table-neon::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border-radius: 22px;
+            background: linear-gradient(45deg, 
+                #80ff00, 
+                #b3ff66, 
+                #ccff99,
+                #b3ff66,
+                #80ff00);
+            background-size: 400% 400%;
+            z-index: -1;
+            animation: table-border 8s linear infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes table-border {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .table-inner-neon {
+            background: linear-gradient(135deg, 
+                rgba(8, 20, 5, 0.95) 0%,
+                rgba(12, 30, 8, 0.95) 100%);
+            border-radius: 18px;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+            border: 1px solid rgba(128, 255, 0, 0.3);
+        }
+
+        .table-header-neon {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .table-header-neon::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 20%;
+            right: 20%;
+            height: 3px;
+            background: linear-gradient(90deg, 
+                transparent, 
+                #80ff00, 
+                #b3ff66,
+                #80ff00,
+                transparent);
+            border-radius: 2px;
+            box-shadow: 0 0 15px rgba(128, 255, 0, 0.7);
+        }
+
+        .table-title-neon {
+            font-family: 'Tilt Neon', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            text-shadow: 
+                0 0 10px rgba(128, 255, 0, 0.8),
+                0 0 20px rgba(128, 255, 0, 0.4);
+            letter-spacing: 1px;
+            background: linear-gradient(to right, #80ff00, #ffffff, #80ff00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: title-shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes title-shimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .table-subtitle-neon {
+            font-family: 'Tilt Neon', sans-serif;
+            font-size: 1rem;
+            color: #ccffcc;
+            opacity: 0.9;
+            text-shadow: 0 0 5px rgba(128, 255, 0, 0.5);
+        }
+
+        .info-grid-neon {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .info-grid-neon {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+
+        .info-item-neon {
+            background: rgba(0, 30, 10, 0.7);
+            border-radius: 15px;
+            padding: 1.5rem;
+            border: 2px solid rgba(128, 255, 0, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .info-item-neon::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, 
+                #80ff00, 
+                #b3ff66, 
+                #80ff00);
+            opacity: 0.8;
+            border-radius: 2px 2px 0 0;
+        }
+
+        .info-item-neon:hover {
+            transform: translateY(-5px);
+            border-color: rgba(179, 255, 102, 0.7);
+            box-shadow: 
+                0 10px 20px rgba(128, 255, 0, 0.3),
+                inset 0 0 15px rgba(179, 255, 102, 0.1);
+        }
+
+        .info-item-wide-neon {
+            grid-column: span 2;
+        }
+
+        @media (max-width: 768px) {
+            .info-item-wide-neon {
+                grid-column: span 1;
+            }
+        }
+
+        .info-label-neon {
+            font-family: 'Tilt Neon', sans-serif;
+            font-size: 0.9rem;
+            color: #b3ff66;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .info-label-neon::before {
+            content: '✦';
+            color: #80ff00;
+            font-size: 1rem;
+        }
+
+        .info-value-neon {
+            font-family: 'Tilt Neon', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 10px rgba(128, 255, 0, 0.7);
+        }
+
+        .info-description-neon {
+            font-family: 'Tilt Neon', sans-serif;
+            font-size: 0.9rem;
+            color: #ccffcc;
+            line-height: 1.4;
+        }
+
+        .neon-code {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: rgba(128, 255, 0, 0.2);
+            border-radius: 6px;
+            border: 1px solid rgba(128, 255, 0, 0.5);
+            color: #80ff00;
+            font-weight: 800;
+            font-size: 1.1rem;
+            margin: 0 0.2rem;
+            text-shadow: 0 0 8px rgba(128, 255, 0, 0.7);
+            box-shadow: 0 0 10px rgba(128, 255, 0, 0.3);
+            animation: code-pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes code-pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        .requirements-section-neon {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid rgba(128, 255, 0, 0.4);
+        }
+
+        .requirements-title-neon {
+            font-family: 'Tilt Neon', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 0 10px rgba(128, 255, 0, 0.7);
+        }
+
+        .requirements-list-neon {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .requirement-item-neon {
+            display: flex;
+            align-items: flex-start;
+            padding: 1.2rem;
+            background: rgba(0, 40, 15, 0.8);
+            border-radius: 12px;
+            border-left: 4px solid #80ff00;
+            transition: all 0.3s ease;
+        }
+
+        .requirement-item-neon:hover {
+            background: rgba(0, 50, 20, 0.9);
+            transform: translateX(5px);
+        }
+
+        .requirement-number-neon {
+            min-width: 32px;
+            height: 32px;
+            background: rgba(128, 255, 0, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            font-family: 'Tilt Neon', sans-serif;
+            font-weight: 800;
+            color: #80ff00;
+            font-size: 1rem;
+            border: 2px solid rgba(128, 255, 0, 0.5);
+            flex-shrink: 0;
+            box-shadow: 0 0 10px rgba(128, 255, 0, 0.3);
+        }
+
+        .requirement-content-neon {
+            flex: 1;
+        }
+
+        .requirement-text-neon {
+            font-family: 'Tilt Neon', sans-serif;
+            font-size: 1rem;
+            color: #b3ff66;
+            margin-bottom: 0.3rem;
+            line-height: 1.3;
+        }
+
+        .requirement-note-neon {
+            font-family: 'Tilt Neon', sans-serif;
+            font-size: 0.85rem;
+            color: #b3ff66;
+            font-style: italic;
+        }
+
+        .table-footer-neon {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid rgba(128, 255, 0, 0.4);
+            text-align: center;
+        }
+
+        .footer-note-neon {
+            font-family: 'Tilt Neon', sans-serif;
+            font-size: 0.9rem;
+            color: #ccffcc;
+            background: rgba(0, 100, 50, 0.2);
+            padding: 1rem;
+            border-radius: 10px;
+            border: 1px solid rgba(128, 255, 0, 0.4);
+            line-height: 1.4;
+            box-shadow: 0 0 15px rgba(128, 255, 0, 0.2);
+        }
+
+        .footer-note-neon strong {
+            color: #80ff00;
+            font-weight: 700;
+        }
+
+        .table-decoration {
+            position: absolute;
+            z-index: 0;
+            opacity: 0.3;
+        }
+
+        .decoration-corner {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #80ff00;
+            opacity: 0.5;
+        }
+
+        .decoration-corner.tl {
+            top: 15px;
+            left: 15px;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .decoration-corner.tr {
+            top: 15px;
+            right: 15px;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        .decoration-corner.bl {
+            bottom: 15px;
+            left: 15px;
+            border-right: none;
+            border-top: none;
+        }
+
+        .decoration-corner.br {
+            bottom: 15px;
+            right: 15px;
+            border-left: none;
+            border-top: none;
+        }
+
+        .decoration-dot {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #80ff00;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #80ff00;
+        }
+
+        .decoration-dot.tl {
+            top: 20px;
+            left: 20px;
+        }
+
+        .decoration-dot.tr {
+            top: 20px;
+            right: 20px;
+        }
+
+        .decoration-dot.bl {
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .decoration-dot.br {
+            bottom: 20px;
+            right: 20px;
+        }
+
+        /* customizable snowflake styling */
+        .snowflake {
+        color: #fff;
+        font-size: 1em;
+        font-family: Arial, sans-serif;
+        text-shadow: 0 0 5px #000;
+        }
+        
+        .snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;pointer-events:none;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+    </style>
+</head>
+<body>
+    <!-- Tło z gradientem -->
+    <div class="background-image"></div>
+
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+            <div class="inner">❅</div>
+        </div>
+    </div>
+
+    <div class="mobile-top-logo">
+        <img src="./logo.svg" alt="SpinBetter" />
+    </div>
+    
+    <div class="content-overlay">
+        <!-- Sekcja główna -->
+        <section class="leaderboard-section">
+            <div class="santa-fade-container">
+                <img src="./pfp2.png" alt="Święta z Ciosem" class="santa-fade-image">
+            </div>
+
+            <h1 class="prize-amount" style="font-size: 2.9rem; margin-bottom: 0.5rem;">NOWOROCZNE ROZDANIE Z CIOSEM</h1>
+            <div class="emphasis-headline-red">CODZIENNIE 10 OSÓB ZGARNIA BLIKA</div>
+            <div class="emphasis-headline-yellow" style="font-size: 1rem; margin-top: -1rem;">(ZGARNIJ NAWET DO 1000ZŁ)</div>
+            
+            <!-- NOWA ULEPSZONA TABELA INFORMACYJNA -->
+            <div class="info-table-neon">
+                <div class="decoration-corner tl"></div>
+                <div class="decoration-corner tr"></div>
+                <div class="decoration-corner bl"></div>
+                <div class="decoration-corner br"></div>
+                
+                <div class="decoration-dot tl"></div>
+                <div class="decoration-dot tr"></div>
+                <div class="decoration-dot bl"></div>
+                <div class="decoration-dot br"></div>
+                
+                <div class="table-inner-neon">
+                    <!-- Nagłówek tabeli -->
+                    <div class="table-header-neon">
+                        <h2 class="table-title-neon">INFORMACJE O ROZDANIU</h2>
+                        <p class="table-subtitle-neon">Wszystkie ważne szczegóły w jednym miejscu</p>
+                    </div>
+                    
+                    <!-- Grid z danymi -->
+                    <div class="info-grid-neon">
+                        <div class="info-item-neon info-item-wide-neon">
+                            <div class="info-label-neon">LICZBA WYGRANYCH</div>
+                            <div class="info-value-neon">CODZIENNIE 10 OSÓB</div>
+                            <div class="info-description-neon">Każda osoba wygrywa losową kwotę w ramach rozdań</div>
+                        </div>
+                        
+                        <div class="info-item-neon">
+                            <div class="info-label-neon">KOD PROMOCYJNY</div>
+                            <div class="info-value-neon"><span class="neon-code">CIOS</span></div>
+                            <div class="info-description-neon">Wymagany przy rejestracji</div>
+                        </div>
+                        
+                        <div class="info-item-neon">
+                            <div class="info-label-neon">WYPŁATA</div>
+                            <div class="info-value-neon">BLIK / KRYPTO</div>
+                            <div class="info-description-neon">Szybka i bezpieczna</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sekcja wymagań -->
+                    <div class="requirements-section-neon">
+                        <h3 class="requirements-title-neon">WYMAGANE KROKI</h3>
+                        <ul class="requirements-list-neon">
+                            <li class="requirement-item-neon">
+                                <div class="requirement-number-neon">1</div>
+                                <div class="requirement-content-neon">
+                                    <div class="requirement-text-neon">Rejestracja na SPINIT z kodem <span class="neon-code">CIOS</span></div>
+                                </div>
+                            </li>
+                            <li class="requirement-item-neon">
+                                <div class="requirement-number-neon">2</div>
+                                <div class="requirement-content-neon">
+                                    <div class="requirement-text-neon">Wyślij wiadomość na Instagramie</div>
+                                    <div class="requirement-note-neon">O treści: <span class="neon-code">"GOTOWE"</span> + E-MAIL konta na SPINIT!</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Stopka tabeli -->
+                    <div class="table-footer-neon">
+                        <div class="footer-note-neon">
+                            <strong>WAŻNE:</strong> Tylko 18+. Nie jest to loteria. KYC niewymagane. Depozyt opcjonalny.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Sekcja rekomendacji -->
+        <section class="recommendations-section">
+
+            <h2 class="section-title">
+                CIOS <span class="magical-text">REKOMENDUJE</span>
+            </h2>
+            <p class="section-subtitle">
+                ODBIERZ NAJLEPSZE BONUSY
+            </p>
+            <div class="casino-card-container">
+                <div class="casino-card">
+                    <div class="casino-card-bg">
+                        <img alt="Spinbara Background" src="./banner1.png">
+                        <div class="casino-card-bg-overlay"></div>
+                    </div>
+                    <div class="casino-card-content">
+                        <div>
+                            <div class="casino-logo">
+                                <img alt="DudeSpin Logo" src="./logo.svg">
+                            </div>
+                            <div class="bonus-badge" >
+                                <span>BONUS POWITALNY</span>
+                            </div>
+                           <h4>100% do 2250zł + 200 FS + 1 Bonus Crab</h4>
+                            <p>bez depozytu</p> 
+                            <div class="pros-section">
+                                <h5 class="pros-title">
+                                    Największe plusy
+                                </h5>
+                                <ul class="pros-list">
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span>Bonus powitalny 100%</span>
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span>200 darmowych spinów</span>
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 6 9 17l-5-5"></path>
+                                        </svg>
+                                        <span>Szybkie wypłaty w 24h</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bonus-button-container">
+                            <a href="https://swp.lynmonkel.com/?mid=348501_2014527" target="_blank" rel="noopener noreferrer" class="bonus-button">
+                                <span>Odbierz Bonus</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-center">
+            <div class="divider-dot"></div>
+            <div class="divider-dot"></div>
+            <div class="divider-dot-main"></div>
+            <div class="divider-dot"></div>
+            <div class="divider-dot"></div>
+        </div>
+        <div class="divider-line-reverse"></div>
+    </div>
+
+    <!-- Sekcja instrukcji -->
+    <section class="instructions-section">
+        <div class="instructions-background">
+            <div class="instructions-overlay"></div>
+        </div>
+        <div class="instructions-container">
+            <h2 class="instructions-title">
+                Przydatne <span class="instructions-gradient">Instrukcje</span>
+            </h2>
+            <div class="instructions-grid">
+                <!-- Karta 1 - AKTYWNA -->
+                <a class="instruction-link" href="./wplacanie.html">
+                    <div class="instruction-card active">
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 16v-4"></path>
+                                <path d="M12 8h.01"></path>
+                            </svg>
+                        </div>
+                        <div class="instruction-content">
+                            <h3 class="instruction-title">Jak wpłacać poprzez krypto</h3>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Karta 2 - Aktywna -->
+                <a class="instruction-link" href="./instrukcje.html">
+                    <div class="instruction-card active">
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 16v-4"></path>
+                                <path d="M12 8h.01"></path>
+                            </svg>
+                        </div>
+                        <div class="instruction-content">
+                            <h3 class="instruction-title">Jak ominąć blokady dostawcy internetu</h3>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Karta 3 - AKTYWNA -->
+                <a class="instruction-link" href="./wyplacanie.html">
+                    <div class="instruction-card active">
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 16v-4"></path>
+                                <path d="M12 8h.01"></path>
+                            </svg>
+                        </div>
+                        <div class="instruction-content">
+                            <h3 class="instruction-title">Jak bezpiecznie wypłacać</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Nowy footer -->
+    <footer class="footer-disclaimer">
+        <p class="footer-text">
+            <strong>Ważna informacja:</strong> Ta strona internetowa prezentuje informacje o ekskluzywnych kasynach oraz zawiera odnośniki partnerskie, które są przeznaczone wyłącznie dla osób przebywających w regionach, gdzie internetowe gry losowe są dozwolone przez prawo.<br>
+            Obowiązkiem użytkowników jest upewnienie się, że ich aktywność jest zgodna z lokalnymi przepisami. Nie zachęcamy ani nie popieramy nielegalnych form hazardu.<br>
+            Zanim skorzystasz z jakichkolwiek ofert przedstawionych na tej stronie, gorąco rekomendujemy zweryfikowanie legalności hazardu online w Twojej lokalizacji.
+        </p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileLogo = document.querySelector('.mobile-top-logo');
+            let lastScrollTop = 0;
+            const scrollThreshold = 100; // Po jakim przesunięciu logo ma znikać (w pikselach)
+            
+            if (mobileLogo && window.innerWidth <= 768) {
+                window.addEventListener('scroll', function() {
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    
+                    if (scrollTop > scrollThreshold) {
+                        // Jeśli przewinęliśmy więcej niż threshold, ukrywamy logo
+                        mobileLogo.classList.add('hidden');
+                    } else {
+                        // Jeśli jesteśmy blisko góry, pokazujemy logo
+                        mobileLogo.classList.remove('hidden');
+                    }
+                    
+                    lastScrollTop = scrollTop;
+                });
+                
+                // Opcjonalnie: ukryj logo po kliknięciu (jeśli chcesz)
+                mobileLogo.addEventListener('click', function() {
+                    this.classList.add('hidden');
+                });
+            }
+        });
+        </script>
+</body>
+</html>
